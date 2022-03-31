@@ -1,0 +1,80 @@
+<!-- This is a comment in HTML
+	 This is not really a good website for learning HTML and CSS, seriously.
+	 Please refer to https://www.w3schools.com/html/default.asp and https://www.w3schools.com/css/default.asp. Much better than my website to learn HTML and CSS. -->
+
+<!-- Defines that this document type is indeed HTML5 -->
+<!DOCTYPE html> 
+<!-- This will contain all of our things in our page -->
+<html>
+	<!-- This contains meta or smth, like the page's title, and scripts -->
+	<head>
+		<!-- This is where you will CSS -->
+		<style>
+			/* This is a comment in CSS */
+			
+			/* Import Comic Sans font in the fonts folder. Not necessary but I'm doing this because Linux no no have Comic Sans
+			   don't you fucking point out that "Linux is a kernel, not an OS" or i will personally come into your house and brutally mutilate you while keeping you alive for as long as possible so you can suffer as long i cut your toes, nails, tongue, eyes, and your chin */
+			@font-face {
+				font-family: Comic Sans;
+				src: url(./fonts/comic.ttf)
+			}
+			
+			/* If you're wondering why I'm not always doing 
+				element {
+					stuff: here
+				},
+			that's because it's a bit more compact in stuff that doesnt need much css and i also like how it looks */
+			
+			/* Give <html> a background image */
+			html {background-image: url(./images/gifs/arrival.gif)}
+			/* Remove <body>'s margin */
+			body {margin: 0}
+			/* Give all <p> the Comic Sans font */
+			p {font-family: 'Comic Sans'}
+			
+			/* Make <header> and <footer> a flex container
+			   More info about flex in https://www.w3schools.com/css/css3_flexbox_container.asp */
+			header, footer {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 16px;
+				background-image: url(./images/gifs/HorribleHighlevelCardinal-max-1mb.gif)
+			}
+			
+			/* This makes text white, and removes top margin in every <p> inside of a <header> */
+			header p {
+				color: white;
+				margin-top: 0
+			}
+			
+			/* Makes a class called headerlogothingy
+			   Whatever thing uses the class, it will make text bigger and bold, and also removes margin
+			   More about classes in https://www.w3schools.com/cssref/sel_class.asp */
+			.headerlogothingy {
+				font-size: 32px;
+				font-weight: bold;
+				margin: 0
+			}
+		</style>
+	</head>
+	<!-- This is where you will add stuff here that you will see in the browser -->
+	<body> 
+		<audio src="./audio/soundtrack.mp3" autoplay></audio>
+		<header>
+			<p class="headerlogothingy">oxy!mc</p>
+			<p>play.oxy.mc</p>
+			<p>the best minecraft server in existence, proved by 83 scientists from russia</p>
+		</header>
+		<h1>what is oxy!mc?</h1>
+		<p>oxy!mc is the best minecraft server since .io and bitter!mc. play now!</p>
+		<video src="./video/bike death.mp4" controls></video>
+		<footer style="flex-direction:row">
+			<p style="color:white">gay macimas 2022</p>
+			<img src="./images/ueqhe.png"/ width="64">
+			<img src="./images/the man.png"/ width="64">
+			<img src="./images/snes.png"/ width="64">
+			<img src="./images/microsoft.png"/ width="64">
+		</footer>
+	</body>
+</html>
